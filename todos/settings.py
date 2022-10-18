@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'webpack_loader',
     'rest_framework',
+    'coverage',
 ]
 
 INSTALLED_APPS += PROJECT_APPS

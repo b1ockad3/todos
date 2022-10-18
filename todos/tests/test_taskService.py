@@ -2,7 +2,7 @@ from rest_framework import status
 from rest_framework.test import APITestCase
 
 
-class TestTaskService(APITestCase):
+class TestTaskService(APITestCase): # pragma: no cover
     """
     Testcases and helper function to test static\js\services\taskService.js
     """
