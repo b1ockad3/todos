@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'webpack_loader',
     'rest_framework',
     'coverage',
+    'corsheaders',
 ]
 
 INSTALLED_APPS += PROJECT_APPS
@@ -60,8 +61,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
-
+CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'todos.urls'
 
 TEMPLATES = [
